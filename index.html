@@ -1,0 +1,176 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Canal Gráfico | INICIO</title>
+<link href="CSS/cssreset.css" rel="stylesheet" type="text/css">
+<link href="CSS/css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!--INICIO DE GLOBAL-->
+<div id="global">
+    <!--INICIO DE MENU-NAVEGADOR-->
+  <nav id="header">
+    <ul>
+      <li><img src="IMAGENES/logo.png" alt="logo" /></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="camp.html">Campaña</a></li>
+    </ul>
+  </nav>
+    <!--FINAL DE MENU-NAVEGADOR-->
+    
+      <!--LOGO ANIMADO-->
+      <div id="animLogo">
+          <video width="1280" height="400" loop autoplay>
+              <source src="VIDEOS/canalG.mp4" type="video/mp4">
+              <source src="VIDEOS/canalG.mp4" type="video/ogg">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+      <!--INICIO DE SEGUNDA SECCION PARALLAX-->
+      <div id="paralla">
+          <div class="para1">
+              <p class="description">
+                  La agencia canal gráfico tiene una imagen corporativa bien definida, que muestra una razón de ser, una riqueza creativa y una fuerza iconografica que contribuye de una manera positiva a la proyección de lo que se espera, de lo que es la agencia en si y de los resultados que se pueden lograr en ella. Esta imagen esta ligada no solo a mostrar innovación, belleza y color, si no una visión serena por la seguridad que refleja que conlleva a mostrar tambien implicitamente sus excelentes servicios; una visión clara y concentrada de la dedicación y atención a los proyectos deseados.
+                  Más que un marca es el sitio ideal para que cualquier idea o iniciativa tenga desde el punto de vista creativo las mejores referencias para fluir en el mercado actual.
+                  </p>
+          </div>
+          <div class="para2">
+              <img src="VIDEOS/fotos_cayendo.gif" alt="giff" />
+          </div>
+      </div>
+
+      <!--FINAL DE SEGUNDA SECCION 2 DIVS-->
+
+
+    <!--INICIO DE SLIDER-->
+    <div id="SliderSlot">
+      <div id="SliderFinal">
+      		<div class="slideshow-container">
+        		<div class="mySlides fade">
+        			<div class="numbertext"></div>
+                    <img src="IMAGENES/slider1.jpg" height="450" alt="fot1" />
+                    <div class="text"></div>
+        		</div>
+        		<div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="IMAGENES/slider2.jpg" height="450" alt="fot2" />
+                    <div class="text"></div>
+        		</div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="IMAGENES/slider3.jpg" height="450" alt="foto3" />
+                    <div class="text"></div>
+                </div>
+                <div class="prev" onclick="plusSlides(-1)"><p>&#10094;</p></div>
+                <div class="next" onclick="plusSlides(1)"><p>&#10095;</p></div>
+        	</div>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+      </div>
+    </div>
+
+    <!--FIN DE SLIDER-->
+
+      <!--INICIO DE SEGUNDA SECCION PARALLAX-->
+      <div id="brand">
+          <img src="IMAGENES/parte1.jpg" alt="giff" width="1280"/>
+      </div>
+
+      <!--FINAL DE SEGUNDA SECCION 2 DIVS-->
+      
+    <div id="devs">
+        <div>
+        <p>
+        Equipo de trabajo
+        </p>
+        </div>
+        <a id="myBtn1">
+            <p>              
+                <!--Director de medios y finanzas-->
+            </p>
+            <p>
+                <img src="IMAGENES/popAleja.jpg" />
+            </p>
+            <p>               
+                ALEJANDRA LONDOÑO  
+            </p>
+        </a>
+        <a id="myBtn2">
+            <p>
+                <!--Director de arte-->
+            </p>
+            <p>
+                <img src="IMAGENES/popJorge.jpg" />
+            </p>
+            <p>                
+                JORGE LUIS VEGA
+            </p>
+        </a>
+        <a id="myBtn3">
+            <p>
+                <!--Gerencia-->
+            </p>
+            <p>
+                <img src="IMAGENES/popLuisa.jpg" />
+            </p>
+            <p>
+                LUISA FERNANDA BEDOYA
+            </p>
+        </a>
+    </div>
+      <!--INICIO DE ULTIMA SECCION FOOTER-->
+      <footer>
+
+          <div id="pie">
+              <a href="https://www.facebook.com/Canal-Grafico-107444060962528/"><img src="IMAGENES/face.png" alt="facebook"></a>
+              <a href="https://www.instagram.com/canalgrafico_agencia/"><img src="IMAGENES/insta.png" alt="instagram"></a>
+          </div>
+
+      </footer>
+
+      <!--FINAL DE ULTIMA SECCION FOOTER-->
+    
+</div>
+
+    <!--FINAL DE GLOBAL-->
+    
+    <!--INICIO DE SCRIPT SLIDER-->
+<p>
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";}
+    </script>
+</p>
+<p>&nbsp; </p>
+
+    <!--FINAL DE SCRIPT SLIDER-->
+</body>
+</html>

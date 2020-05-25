@@ -1,0 +1,307 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Canal Gráfico | GALERIA</title>
+<link href="CSS/cssreset.css" rel="stylesheet" type="text/css">
+<link href="CSS/css.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <!--INICIO DE GLOBAL-->
+<div id="global">
+    <!--INICIO DE MENU-NAVEGADOR-->
+  <nav id="header">
+    <ul>
+      <li><img src="IMAGENES/logo.png" alt="logo" /></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="camp.html">Campaña</a></li>
+    </ul>
+  </nav>
+    <!--FINAL DE MENU-NAVEGADOR-->
+    
+      
+      <!--INICIO DE SEGUNDA SECCION PARALLAX-->
+      <div id="paralla1">
+
+          <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'Fotos')" id="defaultOpen">Fotografías</button>
+              <button class="tablinks" onclick="openCity(event, 'Ilustraciones')">Ilustraciones</button>
+              <button class="tablinks" onclick="openCity(event, 'Logos')">Logos</button>
+              <button class="tablinks" onclick="openCity(event, 'Portadas')">Portadas</button>
+              <button class="tablinks" onclick="openCity(event, 'Tripticos')">Trípticos</button>
+              <button class="tablinks" onclick="openCity(event, 'Volantes')">Volantes</button>
+          </div>
+
+          <!-- Tab content -->
+          <div id="Fotos" class="tabcontent">
+              <div id="galery">
+                  
+                  <a><img src="IMAGENES/foto1.jpg" /></a>
+                  <a><img src="IMAGENES/foto2.jpg" /></a>
+                  <a><img src="IMAGENES/foto3.jpg" /></a>
+              </div>
+          </div>
+
+          <div id="Ilustraciones" class="tabcontent">
+              <div id="galery">
+                  <a><img src="IMAGENES/ilustracion1.jpeg" /></a>
+                  <a><img src="IMAGENES/ilustracion2.jpeg" /></a>
+                  <a><img src="IMAGENES/ilustracion3.jpeg" /></a>
+              </div>
+          </div>
+
+          <div id="Logos" class="tabcontent">
+              <div id="galery">
+                  <a><img src="IMAGENES/logo1.jpg" /></a>
+                  <a><img src="IMAGENES/logo3.jpg" /></a>
+                  <a><img src="IMAGENES/logo2.jpg" /></a>
+              </div>
+          </div>
+
+          <div id="Portadas" class="tabcontent">
+              <div id="galery">
+                  <a><img src="IMAGENES/portada1.jpg" /></a>
+                  <a><img src="IMAGENES/portada2.jpg" /></a>
+                  <a><img src="IMAGENES/portada3.jpg" /></a>
+              </div>
+          </div>
+
+          <div id="Tripticos" class="tabcontent">
+              <div id="galery">
+                  <a><img src="IMAGENES/triptico1.jpg" /></a>
+                  <a><img src="IMAGENES/triptico2.jpg" /></a>
+                  <a><img src="IMAGENES/triptico3.jpg" /></a>
+              </div>
+          </div>
+
+          <div id="Volantes" class="tabcontent">
+              <div id="galery">
+                  <a><img src="IMAGENES/volante1.jpg" /></a>
+                  <a><img src="IMAGENES/volante2.jpg" /></a>
+                  <a><img src="IMAGENES/volante3.png" /></a>
+              </div>
+          </div>
+
+      </div>
+
+    <div id="separador">
+    </div>
+    <div id="">
+        <div id="galery2">
+            <a class="imglink"  onclick="openCity(event, 'Ilustraciones')">
+                <div class="container">
+                    <img src="IMAGENES/ilustracion1.jpeg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Ilustración tipográfica</div>
+                    </div>
+                </div>
+            </a>
+            <a class="imglink"  onclick="openCity(event, 'Fotos')">
+                <div class="container">
+                    <img src="IMAGENES/fotothumb1.jpg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Fotografía</div>
+                    </div>
+                </div>
+            </a>
+            <a class="imglink"  onclick="openCity(event, 'Logos')">
+                <div class="container">
+                    <img src="IMAGENES/logo1.jpg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Logo</div>
+                    </div>
+                </div>
+            </a>
+            <a class="imglink"  onclick="openCity(event, 'Portadas')">
+                <div class="container">
+                    <img src="IMAGENES/portada1.jpg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Portada revista</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div id="galery2">
+            <a class="imglink"  onclick="openCity(event, 'Volantes')">
+                <div class="container">
+                    <img src="IMAGENES/volante1.jpg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Volante</div>
+                    </div>
+                </div>
+            </a>
+            <a class="imglink"  onclick="openCity(event, 'Tripticos')">
+                <div class="container">
+                    <img src="IMAGENES/triptico1.jpg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Tríptico</div>
+                    </div>
+                </div>
+            </a>
+            <a class="imglink"  onclick="openCity(event, 'Ilustraciones')">
+                <div class="container">
+                    <img src="IMAGENES/ilustracion2.jpeg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Ilustración tipográfica</div>
+                    </div>
+                </div>
+            </a>
+            <a class="imglink"  onclick="openCity(event, 'Fotos')">
+                <div class="container">
+                    <img src="IMAGENES/fotothumb2.jpg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Fotografía</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div id="galery2">
+            <a class="imglink"  onclick="openCity(event, 'Logos')">
+                <div class="container">
+                    <img src="IMAGENES/logo2.jpg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Logo</div>
+                    </div>
+                </div>
+            </a>
+            <a class="imglink"  onclick="openCity(event, 'Portadas')">
+                <div class="container">
+                    <img src="IMAGENES/portada2.jpg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Portada revista</div>
+                    </div>
+                </div>
+            </a>
+            <a class="imglink"  onclick="openCity(event, 'Volantes')">
+                <div class="container">
+                    <img src="IMAGENES/volante2.jpg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Volante</div>
+                    </div>
+                </div>
+            </a>
+            <a class="imglink"  onclick="openCity(event, 'Tripticos')">
+                <div class="container">
+                    <img src="IMAGENES/triptico2.jpg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Tríptico</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div id="galery2">
+            <a class="imglink"  onclick="openCity(event, 'Ilustraciones')">
+                <div class="container">
+                    <img src="IMAGENES/ilustracion3.jpeg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Ilustración tipográfica</div>
+                    </div>
+                </div>
+            </a>
+            <a class="imglink"  onclick="openCity(event, 'Fotos')">
+                <div class="container">
+                    <img src="IMAGENES/fotothumb3.jpg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Fotografía</div>
+                    </div>
+                </div>
+            </a>
+            <a class="imglink"  onclick="openCity(event, 'Tripticos')">
+                <div class="container">
+                    <img src="IMAGENES/triptico3.jpg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Tríptico</div>
+                    </div>
+                </div>
+            </a>
+            <a class="imglink" onclick="openCity(event, 'Portadas')">
+                <div class="container">
+                    <img src="IMAGENES/portada3.jpg" alt="Avatar" class="image">
+                    <div class="overlay"></div>
+                    <div class="middle">
+                        <div class="text">Portada revista</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="separador">
+    </div>
+
+
+
+      <!--FINAL DE SEGUNDA SECCION 2 DIVS-->
+
+
+      <!--FINAL DE SEGUNDA SECCION 2 DIVS-->
+      <!--INICIO DE ULTIMA SECCION FOOTER-->
+      <footer>
+
+          <div id="pie">
+              <a href="https://www.facebook.com/Canal-Grafico-107444060962528/"><img src="IMAGENES/face.png" alt="facebook"></a>
+              <a href="https://www.instagram.com/canalgrafico_agencia/"><img src="IMAGENES/insta.png" alt="instagram"></a>
+          </div>
+
+      </footer>
+
+      <!--FINAL DE ULTIMA SECCION FOOTER-->
+    
+
+    <!--FINAL DE GLOBAL-->
+    
+    <!--INICIO DE SCRIPT SLIDER-->
+<p>
+    <script>
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            if (evt.currentTarget.className == "tablinks") {
+                //  block of code to be executed if the condition is true
+                evt.currentTarget.className += " active";
+            }
+            window.scroll(0, 0);
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
+</p>
+<p>&nbsp; </p>
+
+    <!--FINAL DE SCRIPT SLIDER-->
+</body>
+</html>
